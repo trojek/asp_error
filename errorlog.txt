@@ -1,0 +1,37 @@
+2019-05-16T09:55:43.151934+00:00 app[web.1]: 2019-05-16 09:55:43,150 - apscheduler.jobstores.default - ERROR - Unable to restore job "0cfbd58428af4408aa1063dfd39face7" -- removing it
+2019-05-16T09:55:43.151936+00:00 app[web.1]: Traceback (most recent call last):
+2019-05-16T09:55:43.151937+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/apscheduler/util.py", line 289, in ref_to_obj
+2019-05-16T09:55:43.151938+00:00 app[web.1]: obj = getattr(obj, name)
+2019-05-16T09:55:43.151939+00:00 app[web.1]: AttributeError: module 'resources.calendar' has no attribute 'start_watch_calendar'
+2019-05-16T09:55:43.151941+00:00 app[web.1]: 
+2019-05-16T09:55:43.151942+00:00 app[web.1]: During handling of the above exception, another exception occurred:
+2019-05-16T09:55:43.151943+00:00 app[web.1]: 
+2019-05-16T09:55:43.151944+00:00 app[web.1]: Traceback (most recent call last):
+2019-05-16T09:55:43.151946+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/apscheduler/jobstores/mongodb.py", line 128, in _get_jobs
+2019-05-16T09:55:43.151947+00:00 app[web.1]: jobs.append(self._reconstitute_job(document['job_state']))
+2019-05-16T09:55:43.151948+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/apscheduler/jobstores/mongodb.py", line 117, in _reconstitute_job
+2019-05-16T09:55:43.151949+00:00 app[web.1]: job.__setstate__(job_state)
+2019-05-16T09:55:43.151950+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/apscheduler/job.py", line 272, in __setstate__
+2019-05-16T09:55:43.151951+00:00 app[web.1]: self.func = ref_to_obj(self.func_ref)
+2019-05-16T09:55:43.151952+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/apscheduler/util.py", line 292, in ref_to_obj
+2019-05-16T09:55:43.151953+00:00 app[web.1]: raise LookupError('Error resolving reference %s: error looking up object' % ref)
+2019-05-16T09:55:43.151954+00:00 app[web.1]: LookupError: Error resolving reference resources.calendar:start_watch_calendar: error looking up object
+2019-05-16T09:55:43.172741+00:00 app[web.1]: 2019-05-16 09:55:43,171 - apscheduler.jobstores.default - ERROR - Unable to restore job "0cfbd58428af4408aa1063dfd39face7" -- removing it
+2019-05-16T09:55:43.172745+00:00 app[web.1]: Traceback (most recent call last):
+2019-05-16T09:55:43.172747+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/apscheduler/util.py", line 289, in ref_to_obj
+2019-05-16T09:55:43.172748+00:00 app[web.1]: obj = getattr(obj, name)
+2019-05-16T09:55:43.172750+00:00 app[web.1]: AttributeError: module 'resources.calendar' has no attribute 'start_watch_calendar'
+2019-05-16T09:55:43.172751+00:00 app[web.1]: 
+2019-05-16T09:55:43.172755+00:00 app[web.1]: During handling of the above exception, another exception occurred:
+2019-05-16T09:55:43.172757+00:00 app[web.1]: 
+2019-05-16T09:55:43.172758+00:00 app[web.1]: Traceback (most recent call last):
+2019-05-16T09:55:43.172760+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/apscheduler/jobstores/mongodb.py", line 128, in _get_jobs
+2019-05-16T09:55:43.172762+00:00 app[web.1]: jobs.append(self._reconstitute_job(document['job_state']))
+2019-05-16T09:55:43.172763+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/apscheduler/jobstores/mongodb.py", line 117, in _reconstitute_job
+2019-05-16T09:55:43.172765+00:00 app[web.1]: job.__setstate__(job_state)
+2019-05-16T09:55:43.172766+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/apscheduler/job.py", line 272, in __setstate__
+2019-05-16T09:55:43.172767+00:00 app[web.1]: self.func = ref_to_obj(self.func_ref)
+2019-05-16T09:55:43.172769+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/apscheduler/util.py", line 292, in ref_to_obj
+2019-05-16T09:55:43.172770+00:00 app[web.1]: raise LookupError('Error resolving reference %s: error looking up object' % ref)
+2019-05-16T09:55:43.172771+00:00 app[web.1]: LookupError: Error resolving reference resources.calendar:start_watch_calendar: error looking up object
+2019-05-16T09:55:43.174720+00:00 app[web.1]: No scheduled jobs
